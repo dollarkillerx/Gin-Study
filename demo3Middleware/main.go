@@ -38,6 +38,7 @@ func after(ctx *gin.Context) {
 
 func content(ctx *gin.Context) {
 	fmt.Println("content")
+	ctx.Abort() // 不放行
 }
 
 
